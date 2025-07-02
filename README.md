@@ -1,12 +1,12 @@
 # Image Classification on CIFAR-10 using Custom CNN and AlexNet
 
-## 1. Project Overview
+## Project Overview
 
 This project implements and evaluates two Convolutional Neural Network (CNN) architectures for image classification on the CIFAR-10 dataset. The primary goal is to compare the performance of a simple, custom-built CNN against a deeper, AlexNet-inspired model. Additionally, the project explores the effect of targeted data augmentation on improving the accuracy of poorly performing classes.
 
 ---
 
-## 2. Key Objectives
+## Key Objectives
 
 * **Design and Implement a Custom CNN:** Create a lightweight CNN from scratch to establish a performance baseline.
 * **Implement an AlexNet-inspired Architecture:** Adapt the classic AlexNet model for the 32x32 image size of CIFAR-10.
@@ -15,7 +15,18 @@ This project implements and evaluates two Convolutional Neural Network (CNN) arc
 
 ---
 
-## 3. Models Implemented
+## Technologies Used
+
+This project was developed in a Jupyter Notebook environment and leverages the following core Python libraries for machine learning and data science:
+
+* **TensorFlow & Keras:** Used as the primary deep learning framework for building, training, and evaluating the CNN models. `tf.keras.layers` was used extensively for constructing the model architectures.
+* **NumPy:** Essential for numerical operations, including data manipulation and array transformations.
+* **Scikit-learn:** Utilized for performance evaluation, specifically for generating confusion matrices (`sklearn.metrics.confusion_matrix`) and splitting data (`sklearn.model_selection.train_test_split`).
+* **Matplotlib & Seaborn:** Used for data visualization, including plotting training history (accuracy/loss curves) and creating heatmaps for the confusion matrices.
+
+---
+
+## Models Implemented
 
 ### a. Custom CNN
 
@@ -41,7 +52,7 @@ A deeper and more complex architecture based on the original AlexNet, adapted fo
 
 ---
 
-## 4. Methodology and Experiments
+## Methodology and Experiments
 
 1.  **Initial Training:** Both the Custom CNN and the AlexNet model were trained for 15 epochs on the CIFAR-10 training dataset.
 2.  **Performance Analysis:** After the initial training, the models were evaluated on the test set. Per-class accuracy was analyzed using confusion matrices, which revealed that both models struggled with classes like "cat" and "dog."
@@ -53,7 +64,8 @@ A deeper and more complex architecture based on the original AlexNet, adapted fo
 
 ---
 
-## 5. Results and Key Findings
+
+## Results and Key Findings
 
 The final test accuracies highlight the trade-offs between the models and the unexpected impact of the augmentation strategy.
 
@@ -69,7 +81,7 @@ The final test accuracies highlight the trade-offs between the models and the un
 
 ---
 
-## 6. Future Improvements
+## Future Improvements
 
 ### Practical Next Steps
 
